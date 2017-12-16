@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/JB.png">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="JB.png" />
+    <title>Beauty of Indonesia</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/star-rating-svg.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/Chart.js"></script>
+	<script src="assets/js/modernizr.custom.js"></script>
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+  <ul>
+    <li><img src="assets/img/JB.png" alt="" /></li>
+    <li><a href="index.html" class="smoothScroll">Home</a></li>
+    <li><a href="shop.html" class="smoothScroll">Shop</a></li>
+    <li><a href="#contact" class="smoothScroll">Contact</a></li>
+    <li><img onclick="changeEng()" src="assets/img/eng.png" style="cursor: pointer; margin:12px 0 0 800px; height:20px;"></img></li>
+    <li><img onclick="changeInd()" src="assets/img/ina.jpg" style="cursor: pointer; margin:7px 0 0 850px; margin-top:-40px; height:30px;"></img></li>
+  </ul>
+
+  <section id="product-section" class="section-padding">
+    <div class="container">
+      <div class="row">
+      <form class="pull-right form-inline" style="margin-top: 30px; margin-right:40px;">
+        <div class="form-group row">
+          <label>Kategori</label>
+          <select class="form-control">
+            <option>-- Pilih Kategori --</option>
+            <option>Batik Printing</option>
+            <option>Batik Tulis</option>
+          </select>
+        </div>
+      </form>
+      <div class="col-md-12 featured-parts">
+        <div class="col-md-4 mb-20">
+          <div class="product-item">
+            <div class="item-thumb">
+              <center><img src="assets/img/1.jpg" class="img-responsive" alt=""></center>
+            </div>
+            <div class="parts-title-left"><b>Your Type Here</b></div>
+            <div class="parts-title-right">
+              <div class="my-rating"></div>
+            </div>
+            <div class="parts-title-left">
+              Price : $555.555
+              <p>Cashback 30%</p>
+            </div>
+            <div class="parts-title-right" style="padding-top: 0px"><button onclick="showDialog()" class="btn btn-sm btn-blue"><i class="icon-shopping-cart"></i>&nbsp;&nbsp; Buy</button></div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-20">
+          <div class="product-item">
+            <div class="item-thumb">
+              <center><img src="assets/img/2.jpg" class="img-responsive" alt=""></center>
+            </div>
+            <div class="parts-title-left"><b>Your Type Here</b></div>
+            <div class="parts-title-right">
+              <div class="my-rating"></div>
+            </div>
+            <div class="parts-title-left">
+              Price : $555.555
+              <p>Cashback 30%</p>
+            </div>
+            <div class="parts-title-right" style="padding-top: 0px"><button onclick="showDialog()" class="btn btn-sm btn-blue"><i class="icon-shopping-cart"></i>&nbsp;&nbsp; Buy</button></div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-20">
+          <div class="product-item">
+            <div class="item-thumb">
+              <center><img src="assets/img/3.jpg" class="img-responsive" alt=""></center>
+            </div>
+            <div class="parts-title-left"><b>Your Type Here</b></div>
+            <div class="parts-title-right">
+              <div class="my-rating"></div>
+            </div>
+            <div class="parts-title-left">
+              Price : $555.555
+              <p>Cashback 30%</p>
+            </div>
+            <div class="parts-title-right" style="padding-top: 0px"><button onclick="showDialog()" class="btn btn-sm btn-blue"><i class="icon-shopping-cart"></i>&nbsp;&nbsp; Buy</button></div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-20">
+          <div class="product-item">
+            <div class="item-thumb">
+              <center><img src="assets/img/4.jpg" class="img-responsive" alt=""></center>
+            </div>
+            <div class="parts-title-left"><b>Your Type Here</b></div>
+            <div class="parts-title-right">
+              <div class="my-rating"></div>
+            </div>
+            <div class="parts-title-left">
+              Price : $555.555
+              <p>Cashback 30%</p>
+            </div>
+            <div class="parts-title-right" style="padding-top: 0px"><button onclick="showDialog()" class="btn btn-sm btn-blue"><i class="icon-shopping-cart"></i>&nbsp;&nbsp; Buy</button></div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-20">
+          <div class="product-item">
+            <div class="item-thumb">
+              <center><img src="assets/img/5.jpg" class="img-responsive" alt=""></center>
+            </div>
+            <div class="parts-title-left"><b>Your Type Here</b></div>
+            <div class="parts-title-right">
+              <div class="my-rating"></div>
+            </div>
+            <div class="parts-title-left">
+              Price : $555.555
+              <p>Cashback 30%</p>
+            </div>
+            <div class="parts-title-right" style="padding-top: 0px"><button onclick="showDialog()" class="btn btn-sm btn-blue"><i class="icon-shopping-cart"></i>&nbsp;&nbsp; Buy</button></div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-20">
+          <div class="product-item">
+            <div class="item-thumb">
+              <center><img src="assets/img/6.jpg" class="img-responsive" alt=""></center>
+            </div>
+            <div class="parts-title-left"><b>Your Type Here</b></div>
+            <div class="parts-title-right">
+              <div class="my-rating"></div>
+            </div>
+            <div class="parts-title-left">
+              Price : $555.555
+              <p>Cashback 30%</p>
+            </div>
+            <div class="parts-title-right" style="padding-top: 0px"><button onclick="showDialog()" class="btn btn-sm btn-blue"><i class="icon-shopping-cart"></i>&nbsp;&nbsp; Buy</button></div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER SECTION ========== -->
+  <section style="margin-top:75px" id="contact" name="contact"></section>
+  <div id="f">
+    <div class="container">
+      <div class="row">
+          <h3><b>CONTACT US</b></h3>
+          <br>
+          <div class="col-lg-4">
+            <h3><b>Send Us A Message:</b></h3>
+            <h3 class="text-foot">justbatik@gmail.com</h3>
+            <br>
+          </div>
+
+          <div class="col-lg-4">
+            <h3><b>Call Us:</b></h3>
+            <h3 class="text-foot">+62 8123 2996 876</h3>
+            <br>
+          </div>
+
+          <div class="col-lg-4">
+            <h3><b>We Are Social</b></h3>
+            <p>
+              <a href="index.html#"><i class="icon-facebook"></i></a>
+              <a href="index.html#"><i class="icon-twitter"></i></a>
+              <a href="index.html#"><i class="icon-envelope"></i></a>
+            </p>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div><!-- /container -->
+  </div><!-- /f -->
+  <!-- dialog box -->
+<div id="white-background">
+</div>
+<div id="dlgbox" class="bounceInDown animated">
+  <div id="header">
+    <p>JustBatik</p>
+  </div>
+  <div id="content">
+    <img id="photo">
+    <button onclick="showDesign()" id="buttonDsgn">Design</button>
+  </div>
+  <div id="footer">
+    <button id="foot-button" onclick="showBuy()">Buy</button>
+    <button id="foot-button" onclick="dlgOK()" style="margin-left:350px">Cancel</button>
+  </div>
+</div>
+
+<div id="design-con">
+  <div id="header">
+    <p>JustBatik</p>
+  </div>
+  <div id="content-dsgn">
+    <div onclick="showSize()" class="dsgn-chc">
+      <img src="assets/img/img003.jpg" alt="" />
+    </div>
+    <div onclick="showSize()" class="dsgn-chc" style="margin-left: 240px">
+      <img src="assets/img/img004.jpg" alt="" />
+    </div>
+    <div onclick="showSize()" class="dsgn-chc" style="margin-left: 460px">
+      <img src="assets/img/img005.jpg" alt="" />
+    </div>
+  </div>
+  <div onclick="showSize()" id="content-dsgn" style="margin-top: 315px;">
+    <div class="dsgn-chc">
+      <img src="assets/img/img006.jpg" alt="" />
+    </div>
+    <div  onclick="showSize()" class="dsgn-chc" style="margin-left: 240px">
+      <img src="assets/img/img007.jpg" alt="" />
+    </div>
+    <div  onclick="showSize()" class="dsgn-chc" style="margin-left: 460px">
+      <img src="assets/img/img008.png" alt="" />
+    </div>
+  </div>
+  <div class="footer-dsgn">
+    <button id="footer-dsgn-button" onclick="showBuy()" style="margin-left:560px">Buy</button>
+    <button id="footer-dsgn-button" onclick="dlgOKDes()">Cancel</button>
+  </div>
+</div>
+<div id="buy-box">
+  <div id="header">
+    <p>JustBatik</p>
+  </div>
+  <div class="buycontainer">
+    <div class="textcontainer">
+      <p style="float:left; margin-top: -10px">Batik Sumatra<p> <p style="margin-left:425px; margin-top: -10px">Rp200.000<p>
+      <p style="margin-top: 10px">You can get 10%-50%</p><p id="discount" style="margin-left:425px; margin-top: 10px"></p>
+        <hr style="color:white; margin-top:34px; margin-bottom: 5px">
+      <p>You pay</p> <p id="totalPayment" style="margin-left:425px"></p>
+      <p style="margin: 55px 0 0 200px; font-size: 20px">Credit Card</p>
+    </div>
+    <div class="paycontainer">
+      <input type="text" name="name" placeholder="Add a new card">
+      <input type="text" name="name" placeholder="Name on card">
+      <input style="margin-bottom:0;" type="text" placeholder="Card Number">
+      <input style="margin-bottom:0; width:255px; font-size:12px; clear:both"type="text" placeholder="MM/YY">
+      <input style="width:253px; font-size:12px; float: right" type="text" placeholder="CVC">
+      <input style="margin-bottom: 0px" type="text" name="name" placeholder="Country">
+      <input style="margin-bottom: 0px" type="text" name="name" placeholder="Address">
+      <input style="margin-bottom: 0px" type="text" name="name" placeholder="State">
+      <input style="margin-bottom: 0px" type="text" name="name" placeholder="Postal Code">
+      <button onclick="dlgOKBuy()"><p>Buy</p></button>
+    </div>
+  </div>
+  </div>
+
+  <div id="size-box">
+    <div id="header">
+      <p style="clear: both">JustBatik</p><img onclick="closeButton()" style="cursor: pointer; float:right; margin-right: 20px;  display:inline-block; margin-top:-50px; width:20px; height:20px" src="assets/img/close.png">
+    </div>
+    <div class="sizecontainer">
+        <table style="width:100%">
+          <tr>
+            <th>No</th>
+            <th>Jenis</th>
+            <th>Ukuran</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Lingkar Badan</td>
+            <td><input placeholder="Centimeter"></input></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Tinggi Dada</td>
+            <td><input placeholder="Centimeter"></input></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Lingkar Pinggang</td>
+            <td><input placeholder="Centimeter"></input></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Lingkar Pinggul</td>
+            <td><input placeholder="Centimeter"></input></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Panjang Punggung</td>
+            <td><input placeholder="Centimeter"></input></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Lebar Punggung</td>
+            <td><input placeholder="Centimeter"></input></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Lebar Muka/Dada</td>
+            <td><input placeholder="Centimeter"></input></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Lebar Bahu</td>
+            <td><input placeholder="Centimeter"></input></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Panjang Baju dari Pinggang</td>
+            <td><input placeholder="Centimeter"></input></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Panjang Rok</td>
+            <td><input placeholder="Centimeter"></input></td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Tinggi Panggul</td>
+            <td><input placeholder="Centimeter"></input></td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Lingkar Ketiak</td>
+            <td><input placeholder="Centimeter"></input></td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Panjang Tangan</td>
+            <td><input placeholder="Centimeter"></input></td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Lingkar Ujung Tangan</td>
+            <td><input placeholder="Centimeter"></input></td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Panjang Celana</td>
+            <td><input placeholder="Centimeter"></input></td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Lingkar Celana Bawah</td>
+            <td><input placeholder="Centimeter"></input></td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Lingkar Pesak</td>
+            <td><input placeholder="Centimeter"></input></td>
+          </tr>
+        </table>
+        <button style="margin-left:350px" onclick="showTable()" class="sizeBuy">*Ket</button>
+        <button class="sizeBuy" onclick="showBuy()">Buy</button>
+    </div>
+  </div>
+</div>
+
+<div id="tablesize">
+  <div style="background-color: white; height:100%; width: 100%">
+    <img onclick="closeButton()" style="cursor: pointer; width:20px; height:20px; float: right; " src="assets/img/close.png">
+  </div>
+  <img src="assets/img/tablesize.gif" style="clear: both"></img>
+</div>
+
+<!-- script of dialog -->
+<script>
+var counter = 2;
+var whitebg = document.getElementById("white-background");
+var sizebox = document.getElementById("size-box");
+var dsgn = document.getElementById("design-con");
+var buybox = document.getElementById("buy-box");
+var dlg = document.getElementById("dlgbox");
+var tblsize = document.getElementById("tablesize");
+var button = document.getElementById("buttonDsgn");
+var pertama = document.getElementsByTagName("p");
+var kedua = document.getElementsByTagName("p");
+var buyButton = document.getElementsByTagName("button");
+var availArray = new Array(0, 2, 4, 6, 8, 10, 12, 14, 16);
+var sizeArray = new Array(1, 3, 5, 7, 9, 11, 13, 15, 17);
+var availableStock;
+var footerh3 = document.getElementsByTagName("h3");
+
+    function showTable() {
+        sizebox.style.display = "none";
+        tblsize.style.display = "block";
+        tblsize.style.left = "410px";
+        tblsize.style.top = "90px";
+    }
+
+    function changeInd() {
+        footerh3[0].innerHTML = "KONTAK KAMI";
+        footerh3[1].innerHTML = "Kirim Kami Pesan";
+        footerh3[3].innerHTML = "Telepon Kami";
+        footerh3[5].innerHTML = "Kami di Sosial Media";
+
+        for (var i = 0; i < 9; i++) {
+        availableStock = Math.floor(Math.random() * (100 - 1 + 1)) + 10;
+        pertama[availArray[i]].innerHTML = "Stok yang Tersedia : " + availableStock;
+        kedua[sizeArray[i]].innerHTML = "Ukuran : (2x2)m";
+        buyButton[i].innerHTML = "Beli";
+      }
+    }
+
+    function changeEng() {
+      footerh3[0].innerHTML = "CONTACT US";
+      footerh3[1].innerHTML = "Send Us Message";
+      footerh3[3].innerHTML = "Call Us";
+      footerh3[5].innerHTML = "We Are Social";
+
+      for (var i = 0; i < 9; i++) {
+        availableStock = Math.floor(Math.random() * (100 - 1 + 1)) + 10;
+        pertama[availArray[i]].innerHTML = "Available Stock : " + availableStock;
+        kedua[sizeArray[i]].innerHTML = "Size : (2x2)m";
+        buyButton[i].innerHTML = "Buy";
+      }
+    }
+
+    function showSize() {
+      whitebg.style.display = "block";
+      sizebox.style.display = "block";
+      dsgn.style.display = "none";
+
+      sizebox.style.left = "410px";
+      sizebox.style.top = "10px";
+    }
+
+    function closeButton() {
+        sizebox.style.display = "none";
+        whitebg.style.display = "none";
+        tablesize.style.display = "none";
+    }
+
+    function showBuy() {
+      var discountValue = Math.floor(Math.random() * (15 - 10 + 1)) + 10;
+      var discountTotal = discountValue/100 * 200;
+      document.getElementById("discount").innerHTML = "US$" + discountTotal;
+      document.getElementById("totalPayment").innerHTML = "US$" + (200 - discountTotal);
+
+      whitebg.style.display = "block";
+      buybox.style.display = "block";
+      dlg.style.display = "none";
+      dsgn.style.display = "none";
+      sizebox.style.display = "none";
+
+      buybox.style.top = "35px";
+      buybox.style.left = "450px";
+    }
+
+    function dlgOKBuy(){
+      whitebg.style.display = "none";
+      buybox.style.display = "none";
+      dlg.style.display = "none";
+    }
+
+    function dlgOKDes(){
+      whitebg.style.display = "none";
+      dsgn.style.display = "none";
+      dlg.style.display = "none";
+    }
+
+    function showDesign() {
+      whitebg.style.display = "block";
+      dsgn.style.display = "block";
+      dlg.style.display = "none";
+
+      var winWidth = window.innerWidth;
+      var winHeight = window.innerHeight;
+
+      dsgn.style.left = "350px";
+      dsgn.style.top = "40px";
+    }
+
+    function dlgOK(){
+        whitebg.style.display = "none";
+        dlg.style.display = "none";
+    }
+
+    function showDialog(){
+        whitebg.style.display = "block";
+        dlg.style.display = "block";
+        button.style.display ="block";
+        counter += 1;
+
+        if (counter == 12) {
+          counter = 2;
+        }
+
+        var test = document.getElementsByTagName("img")[counter].getAttribute("src");
+        document.getElementById("photo").src = test;
+
+        var winWidth = window.innerWidth;
+        var winHeight = window.innerHeight;
+
+        dlg.style.left = (winWidth/2) - 480/2 + "px";
+        dlg.style.top = "50px";
+    }
+</script>
+<script type="text/javascript" src="assets/js/jquery.star-rating-svg.js"></script>
+<script type="text/javascript">
+      $(document).ready(function(){
+
+       $(".my-rating").starRating({
+         initialRating: 4,
+         strokeColor: '#428bca',
+         hoverColor:'gold',
+         activeColor:'gold',
+         ratedColor:'gold',
+         useGradient:false,
+         strokeWidth: 10,
+         starSize: 17,
+         readOnly:true
+       });
+      });
+    </script>
+</body>
+</html>
